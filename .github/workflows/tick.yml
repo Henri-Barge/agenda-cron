@@ -11,3 +11,5 @@ jobs:
       - name: Erinnerungs-Tick senden
         run: |
           curl -fsS -m 25 -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" "https://webfriends-website.vercel.app/api/tick"
+
+# Hinweis: Datei-Aenderung registriert den Zeitplan beim GitHub-Scheduler neu
